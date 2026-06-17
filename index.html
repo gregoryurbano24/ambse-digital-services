@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AMBSE Digital Experience One-Page Visual</title>
+<style>
+:root{
+  --navy:#071d35;--blue:#1457a8;--red:#c8102e;--gold:#b9975b;--green:#16834b;--purple:#5f3dc4;
+  --ink:#162033;--muted:#667085;--line:#d9e1ef;--soft:#f6f9ff;--white:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#eef3fb;line-height:1.35}
+.sheet{width:11in;min-height:8.5in;margin:24px auto;background:var(--white);box-shadow:0 18px 45px rgba(7,29,53,.18);padding:.38in;border-radius:18px;overflow:hidden}
+.hero{background:linear-gradient(135deg,var(--navy),#12345e);color:#fff;border-radius:20px;padding:24px 28px;display:grid;grid-template-columns:1.35fr .65fr;gap:18px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:#bcd9ff;font-size:11px;font-weight:800;margin-bottom:8px}
+h1{font-size:38px;line-height:.95;margin:0 0 10px;letter-spacing:-.04em}.hero p{font-size:15.5px;color:#dbe9ff;margin:0;max-width:720px}.takeaway{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:15px;font-size:13px;color:#edf6ff}.takeaway b{color:#fff}
+.brandstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.brand{border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:#fff}.brand .name{font-weight:900;letter-spacing:-.03em;font-size:16px;line-height:1}.brand .role{font-size:11.5px;color:var(--muted);margin-top:6px}.brand.falcons{border-top:5px solid var(--red)}.brand.united{border-top:5px solid #111}.brand.nwsl{border-top:5px solid var(--purple)}.brand.mbs{border-top:5px solid var(--green)}
+.boundary{display:grid;grid-template-columns:1fr 78px 1fr;gap:12px;margin-top:12px}.panel{border-radius:18px;padding:18px;border:2px solid}.panel h2{font-size:22px;margin:0 0 8px;color:var(--navy)}.panel ul{margin:0;padding-left:18px}.panel li{font-size:13.2px;margin:6px 0}.dx{background:#eaf3ff;border-color:#b9d8ff}.brandown{background:#fff1f3;border-color:#ffd1d8}.divider{background:var(--navy);color:#fff;border-radius:999px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:900;writing-mode:vertical-rl}
+.midgrid{display:grid;grid-template-columns:1.03fr .97fr;gap:14px;margin-top:14px}.card{border:1px solid var(--line);border-radius:18px;background:#fff;padding:16px}.card h2{font-size:19px;color:var(--navy);margin:0 0 10px}.matrix{display:grid;grid-template-columns:1.1fr .95fr .95fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:11.7px}.cell{padding:9px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.head{background:var(--navy);color:#fff;font-weight:900;text-transform:uppercase;font-size:10px;letter-spacing:.06em}.svc{font-weight:900;color:var(--navy);background:#fbfcff}.badge{display:inline-block;border-radius:999px;padding:3px 6px;font-size:9.5px;font-weight:900;text-transform:uppercase;margin-bottom:4px}.bdx{background:#eaf3ff;color:#0a4c9a}.bbrand{background:#fff0f2;color:#a50d25}.bjoint{background:#fff8e8;color:#7a5a16}.bmbs{background:#eaf8f0;color:#136d3b}.btemp{background:#f1edff;color:#4a2cab}
+.operating{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.op{border-radius:14px;padding:12px;border:1px solid var(--line);min-height:126px}.op h3{font-size:15px;margin:0 0 6px;color:var(--navy)}.op p{font-size:11.7px;color:var(--muted);margin:0 0 7px}.op ul{margin:0;padding-left:15px}.op li{font-size:11.4px;margin:4px 0}.op.nwsl{background:#f5f1ff;border-color:#d7cdfd}.op.mbs{background:#eaf8f0;border-color:#bce8cf}
+.bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.list h2{font-size:18px;margin:0 0 8px;color:var(--navy)}.list ul{list-style:none;margin:0;padding:0}.list li{position:relative;padding:6px 0 6px 24px;border-bottom:1px solid var(--line);font-size:12.4px}.list li:last-child{border-bottom:0}.yes li:before{content:'✓';position:absolute;left:0;color:var(--blue);font-weight:900}.need li:before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:900}.no li:before{content:'×';position:absolute;left:0;color:var(--red);font-weight:900;font-size:17px;line-height:1}
+.principle{margin-top:14px;background:linear-gradient(135deg,#071d35,#12345e);color:#fff;border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center}.principle .label{text-transform:uppercase;letter-spacing:.12em;color:#bcd9ff;font-size:10px;font-weight:900;white-space:nowrap}.principle .text{font-size:16px;font-weight:900}.footer{margin-top:10px;text-align:center;color:var(--muted);font-size:10.5px}
+@media print{body{background:#fff}.sheet{box-shadow:none;margin:0;width:11in;min-height:8.5in;border-radius:0}@page{size:landscape;margin:.25in}}
+@media(max-width:1000px){.sheet{width:auto;margin:12px;border-radius:12px}.hero,.boundary,.midgrid,.bottom{grid-template-columns:1fr}.brandstrip{grid-template-columns:repeat(2,1fr)}.divider{writing-mode:horizontal-tb;min-height:42px}.operating{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.cell{border-right:0}.principle{display:block}.principle .text{margin-top:6px}}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">AMBSE Digital Experience Shared Services</div>
+      <h1>Product & Platform Team. Brand Marketing Partner.</h1>
+      <p>Digital Experience is part of the brand marketing ecosystem by enabling the products, platforms, and execution channels brands use to reach fans. Brand teams lead the strategy, message, content, audience decisions, and business outcomes that activate those platforms.</p>
+    </div>
+    <div class="takeaway"><b>30-second read:</b><br>If the work is about the product, platform, vendor, roadmap, QA, compliance, or execution infrastructure, Digital Experience leads. If the work is about what the brand says, who receives it, why it matters, or how success is measured, the brand leads.</div>
+  </header>
+
+  <section class="brandstrip">
+    <div class="brand falcons"><div class="name">ATLANTA<br>FALCONS</div><div class="role">Mature brand team · Digital Experience supports product/platform needs</div></div>
+    <div class="brand united"><div class="name">ATLANTA<br>UNITED</div><div class="role">Mature brand team · Same support model as Falcons</div></div>
+    <div class="brand nwsl"><div class="name">NWSL<br>ATLANTA</div><div class="role">Build phase · Temporary full digital support until hires are made</div></div>
+    <div class="brand mbs"><div class="name">MERCEDES-BENZ<br>STADIUM</div><div class="role">MBS exception · Fully managed by Digital Experience</div></div>
+  </section>
+
+  <section class="boundary">
+    <div class="panel dx"><h2>Digital Experience Owns</h2><ul><li>Digital products, platforms, roadmaps, governance, vendors, budgets, and QA</li><li>Platform configuration, technical feasibility, accessibility, compliance, and deployment infrastructure</li><li>Execution support across apps, websites, email, SMS/RCS, push, chatbot, maps, and lifecycle tools</li><li>Platform guidance that helps brands create connected fan experiences</li></ul></div>
+    <div class="divider">Boundary</div>
+    <div class="panel brandown"><h2>Brand Teams Own</h2><ul><li>Marketing strategy, campaign concepts, business objectives, and success metrics</li><li>Audience definition, journey logic, offers, promotions, CTAs, copy, creative, and content calendars</li><li>Organic/paid social, photography, video, PR, ticketing priorities, sponsorship obligations, and approvals</li><li>How the brand uses each platform to communicate with fans</li></ul></div>
+  </section>
+
+  <section class="midgrid">
+    <div class="card">
+      <h2>Cliff’s Notes Service Matrix</h2>
+      <div class="matrix">
+        <div class="cell head">Service Area</div><div class="cell head">Digital Experience</div><div class="cell head">Brand Teams</div>
+        <div class="cell svc">Mobile Apps</div><div class="cell"><span class="badge bdx">Owns product</span><br>Roadmap, vendor, features, integrations, QA, releases</div><div class="cell"><span class="badge bbrand">Owns use</span><br>Content placement, campaign use, team push strategy</div>
+        <div class="cell svc">Email / SMS / RCS</div><div class="cell"><span class="badge bdx">Executes</span><br>Platform, builds, QA, sends, deliverability, compliance</div><div class="cell"><span class="badge bbrand">Directs</span><br>Audience, copy, creative, offer, CTA, journey logic</div>
+        <div class="cell svc">Fan Journeys</div><div class="cell"><span class="badge bdx">Enables</span><br>Training, best practices, feasibility, automation setup</div><div class="cell"><span class="badge bbrand">Owns logic</span><br>Goals, structure, triggers, tactics, content, reporting</div>
+        <div class="cell svc">Websites</div><div class="cell"><span class="badge bdx">Owns structure</span><br>Architecture, UX, SEO, navigation, accessibility, QA</div><div class="cell"><span class="badge bbrand">Owns pages</span><br>Page builds, publishing, landing pages, event pages, analytics</div>
+        <div class="cell svc">Chatbot / Maps / Fan Tools</div><div class="cell"><span class="badge bdx">Leads platform</span><br>Strategy, vendor, QA, Fan Experience coordination</div><div class="cell"><span class="badge bjoint">Provides inputs</span><br>Event details, brand priorities, source information</div>
+        <div class="cell svc">KBYG</div><div class="cell"><span class="badge bjoint">Distributes</span><br>Channel execution and structure support</div><div class="cell"><span class="badge bbrand">Supplies content</span><br>Event details, hierarchy, approvals, messaging</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Operating Model by Brand</h2>
+      <div class="operating">
+        <div class="op"><h3>Falcons + United</h3><p><b>Mature team model</b></p><ul><li>Digital Experience supports product/platform needs.</li><li>Brands own marketing, content, journey logic, and fan communication.</li><li>Same service model across both sports teams.</li></ul></div>
+        <div class="op nwsl"><h3>NWSL Atlanta</h3><p><b>Build-phase exception</b></p><ul><li>Digital Experience temporarily acts as the full digital marketing entity.</li><li>Ownership shifts to NWSL as the team hires digital roles.</li></ul></div>
+        <div class="op mbs"><h3>Mercedes-Benz Stadium</h3><p><b>Full management model</b></p><ul><li>Digital Experience manages stadium digital needs end-to-end.</li><li>Acts as the engine for stadium digital marketing execution.</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom">
+    <div class="card list yes"><h2>We Do</h2><ul><li>Build and govern digital platforms</li><li>Manage vendors, roadmaps, QA, budgets, and platform health</li><li>Execute approved work through supported channels</li><li>Advise on platform capabilities and best practices</li><li>Lead ADA/accessibility digital content coordination</li></ul></div>
+    <div class="card list need"><h2>We Need</h2><ul><li>Complete campaign brief and business objective</li><li>Target audience, success metric, timing, and CTA</li><li>Final copy, creative, offer, URL/deep link, and approvals</li><li>Journey logic, audience rules, and channel strategy</li><li>Advance planning for larger campaigns and journeys</li></ul></div>
+    <div class="card list no"><h2>We Do Not Own</h2><ul><li>Brand-led marketing strategy or campaign concepting</li><li>Copywriting from scratch, social, PR, photo, or video</li><li>Offer creation, merch strategy, or ticket sales priorities</li><li>Final business, legal, sponsorship, or partner approvals</li><li>Sports-team web page builds, publishing, or full journey logic</li></ul></div>
+  </section>
+
+  <section class="principle"><div class="label">Operating Principle</div><div class="text">Digital Experience operates the ecosystem. Brand teams decide the message, audience, objective, and definition of success.</div></section>
+  <footer class="footer">One-page visual draft. Replace text-based brand marks with approved logos before publishing or sharing broadly.</footer>
+</main>
+</body>
+</html>
